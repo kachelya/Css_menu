@@ -1,0 +1,72 @@
+body{
+	background:#eaeaea url('img/seigaiha.png');
+	margin: 50px;
+	font-family: 'PT Sans',tahoma,arial;
+	font-size: 16px;
+	text-transform: uppercase;
+	
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	
+
+}
+ul li {
+	height: 42px;
+	overflow: hidden;
+	transition: width .2s ease-in-out,height .2s ease-in-out .3s ;
+	width: 42px;
+}
+ul li:hover {
+	width: 160px;
+	height: 164px;
+}
+ul li a {
+	
+	background: #ccc;
+	color: #fff;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 1px;
+	text-decoration: none;
+	text-indent: 45px;
+	transition: all .2s ease-in-out;
+	width: 160px;
+}
+ul li a:hover {
+	background: #33F5DC;
+}
+ul li a:first-child {
+	position: relative;
+}
+
+ul li a:first-child::before {
+	content: '';
+	display: block;
+	height: 35px;
+	left: 5px;
+	position: absolute;
+	top: 5px;
+	width: 35px;
+
+}
+.main a:first-child::before {
+	background: url(https://cdn4.iconfinder.com/data/icons/basic-line-icon-set-2-1/512/3-32.png)
+	  no-repeat ;
+}
+.info a:first-child::before {
+	background: url(https://cdn4.iconfinder.com/data/icons/basic-line-icon-set-2-1/512/11-32.png)
+	  no-repeat ;
+}
+.search a:first-child::before {
+	background: url(https://cdn4.iconfinder.com/data/icons/basic-line-icon-set-2-1/512/6-32.png)
+	  no-repeat ;
+}
+.debug a:first-child::before {
+	background: url(https://cdn4.iconfinder.com/data/icons/basic-line-icon-set-2-1/512/4-32.png)
+	  no-repeat ;
+}
